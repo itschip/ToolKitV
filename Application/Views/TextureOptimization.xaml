@@ -6,7 +6,11 @@
              xmlns:local="clr-namespace:ToolKitV.Views"
              mc:Ignorable="d">
     <Grid>
-        <StackPanel Orientation="Horizontal">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500*"/>
+            <ColumnDefinition Width="247*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
             <StackPanel Margin="0 -5 0 0">
                 <local:SelectFolder
                     x:Name="MainFolder"
